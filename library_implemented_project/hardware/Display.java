@@ -21,13 +21,11 @@ public class Display extends JFrame implements IDisplay {
 	}
 
 
-	@Override
 	public JPanel getDisplay() {
 		return current;		
 	}
 	
 	
-	@Override
 	public void setDisplay(JPanel panel, String id) {
 		getContentPane().add(panel, id);
 		CardLayout cardLayout = (CardLayout) (getContentPane().getLayout());

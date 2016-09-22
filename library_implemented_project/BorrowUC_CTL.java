@@ -63,14 +63,14 @@ public class BorrowUC_CTL implements ICardReaderListener,
 		display.setDisplay(previous, "Main Menu");
 	}
 
-	@Override
+	  
 	public void cardSwiped(int memberID) {
 		throw new RuntimeException("Not implemented yet");
 	}
 	
 	
 	
-	@Override
+	  
 	public void bookScanned(int barcode) {
 		throw new RuntimeException("Not implemented yet");
 	}
@@ -80,22 +80,22 @@ public class BorrowUC_CTL implements ICardReaderListener,
 		throw new RuntimeException("Not implemented yet");
 	}
 
-	@Override
+	  
 	public void cancelled() {
 		close();
 	}
 	
-	@Override
+	  
 	public void scansCompleted() {
 		throw new RuntimeException("Not implemented yet");
 	}
 
-	@Override
+	  
 	public void loansConfirmed() {
 		throw new RuntimeException("Not implemented yet");
 	}
 
-	@Override
+	  
 	public void loansRejected() {
 		throw new RuntimeException("Not implemented yet");
 	}

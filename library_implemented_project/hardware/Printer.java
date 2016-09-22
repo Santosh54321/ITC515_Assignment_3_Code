@@ -39,7 +39,6 @@ public class Printer extends JFrame implements IPrinter {
 		panel.add(scrollPane);
 	}
 
-	@Override
 	public void print(String printData) {
 		textArea.setText(printData);
 		textArea.setCaretPosition(textArea.getLineCount());		

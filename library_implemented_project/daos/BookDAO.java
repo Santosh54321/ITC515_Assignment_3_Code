@@ -25,7 +25,7 @@ public class BookDAO implements IBookDAO{
 	
 	public String bookDetail[][]=new String[3][3];
 	
-	@Override
+
 	public IBook addBook(String author, String title, String callNo) {
 				
 				bookDetail[i][0]=author;
@@ -41,7 +41,7 @@ public class BookDAO implements IBookDAO{
 	
 	
 	
-	@Override
+
 	public IBook getBookByID(int id)
 	{
 		if(id==0)
@@ -56,13 +56,11 @@ public class BookDAO implements IBookDAO{
 		return null;
 	}
 
-	@Override
 	public List<IBook> listBooks() {
 		
 		return null;
 	}
 
-	@Override
 	public List<IBook> findBooksByAuthor(String author) {
 		for(int i=0; i<3; i++)
 		{
@@ -73,13 +71,12 @@ public class BookDAO implements IBookDAO{
 		return null;
 	}
 
-	@Override
 	public List<IBook> findBooksByTitle(String title) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	
 	public List<IBook> findBooksByAuthorTitle(String author, String title) {
 		// TODO Auto-generated method stub
 		return null;

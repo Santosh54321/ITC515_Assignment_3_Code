@@ -23,7 +23,7 @@ public class CardReader extends JFrame implements ICardReader {
 	private static final long serialVersionUID = 1L;
 	private JTextField textField;
 	private JButton btnReadCard;
-	private ICardReaderListener listener;
+	private ICardReaderListener listener=null;
 
 	public CardReader() {
 		setTitle("Card Reader");
@@ -36,7 +36,7 @@ public class CardReader extends JFrame implements ICardReader {
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblErrorMesg = new JLabel("");
+		final JLabel lblErrorMesg = new JLabel("");
 		lblErrorMesg.setForeground(Color.RED);
 		lblErrorMesg.setBounds(12, 21, 358, 16);
 		panel.add(lblErrorMesg);
@@ -95,13 +95,13 @@ public class CardReader extends JFrame implements ICardReader {
 	}
 
 
-	@Override
+	
 	public void addListener(ICardReaderListener listener) {
 		this.listener = listener;		
 	}
 	public static void main(String args[])
 	{
-		CardReader cr=new CardReader();
+		final CardReader cr=new CardReader();
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
             	cr.setVisible(true);
